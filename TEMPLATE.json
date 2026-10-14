@@ -1,0 +1,45 @@
+{
+  "id": "todo-list",
+  "title": "To-do list",
+  "summary": "A working browser task list. Add, complete and delete tasks; changes are saved in this browser without an account.",
+  "features": [
+    "Add, complete and delete tasks",
+    "Browser-local saving with storage error feedback",
+    "Touch and keyboard controls; no account"
+  ],
+  "category": "Personal Productivity",
+  "upstreamRepository": "bradtraversy/50projects50days",
+  "upstreamCommit": "c92b0bc3a87fc95d44b89552b7b6a2eeb36ca481",
+  "upstreamFiles": [
+    {
+      "path": "todo-list/index.html",
+      "bytes": 577,
+      "sha256": "3f4fc0aa6dd06816c0ce255265dfc03ce7b154ff762661690736e9624ad349d1"
+    },
+    {
+      "path": "todo-list/style.css",
+      "bytes": 1086,
+      "sha256": "4803a1c13c2d29003eca0ac908247b592acdbcc959a0915e90761c48d0466043"
+    },
+    {
+      "path": "todo-list/script.js",
+      "bytes": 1344,
+      "sha256": "c6e63a38b15bc9c59a34dbafb514b315b7c59d2d3005e681fe3e2319fc3696c2"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "b6b04184a9d43ff37c5ac2580980cc9e4f905aab1d055f963b8c749d5cb19450"
+    }
+  ],
+  "license": "MIT",
+  "reviewDate": "2026-10-14",
+  "adaptations": [
+    "Retain original MIT license and source attribution",
+    "Remove remote font imports; no external resources needed",
+    "Add dependency-free local serving with private-file denial",
+    "Keyboard and touch task completion/deletion controls replace mouse-only gestures",
+    "Namespace browser storage and preserve malformed saved data instead of overwriting it",
+    "Render task text as text and retain save-failure feedback"
+  ]
+}

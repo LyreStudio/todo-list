@@ -7,3 +7,5 @@ Windows x64, Node 24.19.0, real Playwright Chromium. Original MIT license and pe
 - Representative browser screenshots are in screenshots/. Touch is Chromium emulation; no physical-device or installed Lyre binary acceptance is claimed.
 
 No account, sync, production hosting or native application is supplied. The drawing canvas is not autosaved; task data is local to the browser.
+
+Both functional projects were additionally tested inside Lyre's unchanged web iframe sandbox (allow-scripts, allow-same-origin, allow-downloads; no forms or native modals). Task Add/Enter/complete/delete and drawing/PNG download/in-page Cancel/Clear pass. In-page controls preserve the sandbox; no additional host permission is requested.

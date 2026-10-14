@@ -40,6 +40,7 @@
     "Add dependency-free local serving with private-file denial",
     "Keyboard and touch task completion/deletion controls replace mouse-only gestures",
     "Namespace browser storage and preserve malformed saved data instead of overwriting it",
-    "Render task text as text and retain save-failure feedback"
+    "Render task text as text and retain save-failure feedback",
+    "Use in-page actions inside Lyre's unchanged sandbox; no form-submission or native-modal permission required"
   ]
 }

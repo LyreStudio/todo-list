@@ -1,5 +1,5 @@
 const key = 'lyre-todo-list.v1';
-const form = document.getElementById('form');
+const addButton = document.getElementById('add-task');
 const input = document.getElementById('input');
 const list = document.getElementById('todos');
 const status = document.getElementById('status');
@@ -35,10 +35,11 @@ function render() {
     label.append(checkbox, text); item.append(label, remove); item.classList.toggle('completed', task.completed); list.append(item);
   }
 }
-form.addEventListener('submit', event => {
-  event.preventDefault();
+function addTask() {
   if (!input.value.trim()) return;
   if (tasks.length >= 2000) { status.textContent = 'Remove a task before adding more.'; return; }
   tasks.push({ text: input.value.trim(), completed: false }); render(); save(); input.value = ''; input.focus();
-});
+}
+addButton.addEventListener('click', addTask);
+input.addEventListener('keydown', event => { if (event.key === 'Enter') { event.preventDefault(); addTask(); } });
 render();
